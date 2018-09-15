@@ -2,7 +2,7 @@
 ## 项目介绍
 该项目是共享单车分布聚类，数据在data目录下，每一行是一条经纬度信息。   
 聚类方法采用基于密度的DBSCAN，范围内邻居点查找采用KD-Tree的range search。参考论文[Range Searching using Kd Tree.](http://www.cs.utah.edu/~lifeifei/cs6931/kdtree.pdf)  
-初次之外本项目解决了论文中关于构建KD-Tree "The basic assumption is no two point have same x-coordinate, and no two points have same y-coordinate" 该假设的限定，本项目针对拥有相同x或相同y的点做了特殊优化，使得KD-Tree面对这些特殊点也能成功构建。　　
+除此之外本项目解决了论文中关于构建KD-Tree "The basic assumption is no two point have same x-coordinate, and no two points have same y-coordinate" 该假设的限定，本项目针对拥有相同x或相同y的点做了特殊优化，使得KD-Tree面对这些特殊点也能成功构建。　　
 ## 代码结构
 * `data`目录存放数据
 * `src`
